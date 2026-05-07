@@ -1,0 +1,19 @@
+name = "prh-finland-companies"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "db-prh-finland-companies"
+database_id = "21242cd4-aac2-4457-9170-128fa1f49d2c"
+
+[triggers]
+crons = ["0 */6 * * *"]
+
+[observability]
+enabled = true
+
+[vars]
+PRODUCT_SLUG = "prh-finland-companies"
+SOURCE_URL = "https://avoindata.prh.fi/en"
